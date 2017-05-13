@@ -1,0 +1,13 @@
+- sudo apt-get install bluez bluez-firmware
+
+// Installation
+
+- bluetoothctl
+# power on
+# agent on
+# scan on
+# pair <adress>
+# connect <adress>
+# trust <adress>
+
+- sudo rfcomm connect hci0 <bdaddr>

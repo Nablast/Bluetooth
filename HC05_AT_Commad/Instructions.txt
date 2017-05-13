@@ -1,0 +1,22 @@
+On fait les branchements de l'image 'branchements'
+On déconnecte le fil reliant les 2 "5V"
+On laisse appuyer sur le bouton du HC05
+On reconnecte le fil et on relache le bouton (LED qui s'affiche 2s - 2s - 2s - ...)
+On lance un moniteur série sur 9600 + "Les deux, NL et CR"
+On tape "AT" et on doit recevoir "OK"
+
+Commandes :
+
+- AT+BAUD? avec ? = 1 à 8 => Changer le baud rate
+        TABLE:
+        1 — — — — -1200
+        2 — — — — -2400
+        3 — — — — -4800
+        4 — — — — -9600
+        5 — — — — -19200
+        6 — — — — -38400
+        7 — — — — -57600
+        8 — — — — -115200
+        
+- AT+NAME = BLUETOOTH_HC_05 => Changer le nom
+- AT+PIN1234 => Changer le pin
